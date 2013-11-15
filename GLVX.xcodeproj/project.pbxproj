@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F8541A518362A4200B3BFDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541A418362A4200B3BFDA /* Cocoa.framework */; };
+		0F8541AF18362A4200B3BFDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541AD18362A4200B3BFDA /* InfoPlist.strings */; };
+		0F8541B118362A4200B3BFDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B018362A4200B3BFDA /* main.m */; };
+		0F8541B518362A4200B3BFDA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541B318362A4200B3BFDA /* Credits.rtf */; };
+		0F8541B818362A4200B3BFDA /* GLVXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */; };
+		0F8541BB18362A4200B3BFDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541B918362A4200B3BFDA /* MainMenu.xib */; };
+		0F8541BD18362A4200B3BFDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541BC18362A4200B3BFDA /* Images.xcassets */; };
+		0F8541C418362A4300B3BFDA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541C318362A4300B3BFDA /* XCTest.framework */; };
+		0F8541C518362A4300B3BFDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541A418362A4200B3BFDA /* Cocoa.framework */; };
+		0F8541CD18362A4300B3BFDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541CB18362A4300B3BFDA /* InfoPlist.strings */; };
+		0F8541CF18362A4300B3BFDA /* GLVXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541CE18362A4300B3BFDA /* GLVXTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F8541C618362A4300B3BFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F85419918362A4200B3BFDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F8541A018362A4200B3BFDA;
+			remoteInfo = GLVX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F8541A118362A4200B3BFDA /* GLVX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLVX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8541A418362A4200B3BFDA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0F8541A718362A4200B3BFDA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0F8541A818362A4200B3BFDA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0F8541A918362A4200B3BFDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F8541AC18362A4200B3BFDA /* GLVX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLVX-Info.plist"; sourceTree = "<group>"; };
+		0F8541AE18362A4200B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F8541B018362A4200B3BFDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F8541B218362A4200B3BFDA /* GLVX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLVX-Prefix.pch"; sourceTree = "<group>"; };
+		0F8541B418362A4200B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0F8541B618362A4200B3BFDA /* GLVXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVXAppDelegate.h; sourceTree = "<group>"; };
+		0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLVXAppDelegate.m; sourceTree = "<group>"; };
+		0F8541BA18362A4200B3BFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0F8541BC18362A4200B3BFDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0F8541C218362A4300B3BFDA /* GLVXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLVXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8541C318362A4300B3BFDA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0F8541CA18362A4300B3BFDA /* GLVXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLVXTests-Info.plist"; sourceTree = "<group>"; };
+		0F8541CC18362A4300B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F8541CE18362A4300B3BFDA /* GLVXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLVXTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F85419E18362A4200B3BFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8541A518362A4200B3BFDA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F8541BF18362A4300B3BFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8541C518362A4300B3BFDA /* Cocoa.framework in Frameworks */,
+				0F8541C418362A4300B3BFDA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F85419818362A4200B3BFDA = {
+			isa = PBXGroup;
+			children = (
+				0F8541AA18362A4200B3BFDA /* GLVX */,
+				0F8541C818362A4300B3BFDA /* GLVXTests */,
+				0F8541A318362A4200B3BFDA /* Frameworks */,
+				0F8541A218362A4200B3BFDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F8541A218362A4200B3BFDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541A118362A4200B3BFDA /* GLVX.app */,
+				0F8541C218362A4300B3BFDA /* GLVXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F8541A318362A4200B3BFDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541A418362A4200B3BFDA /* Cocoa.framework */,
+				0F8541C318362A4300B3BFDA /* XCTest.framework */,
+				0F8541A618362A4200B3BFDA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F8541A618362A4200B3BFDA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541A718362A4200B3BFDA /* AppKit.framework */,
+				0F8541A818362A4200B3BFDA /* CoreData.framework */,
+				0F8541A918362A4200B3BFDA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0F8541AA18362A4200B3BFDA /* GLVX */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541B618362A4200B3BFDA /* GLVXAppDelegate.h */,
+				0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */,
+				0F8541B918362A4200B3BFDA /* MainMenu.xib */,
+				0F8541BC18362A4200B3BFDA /* Images.xcassets */,
+				0F8541AB18362A4200B3BFDA /* Supporting Files */,
+			);
+			path = GLVX;
+			sourceTree = "<group>";
+		};
+		0F8541AB18362A4200B3BFDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541AC18362A4200B3BFDA /* GLVX-Info.plist */,
+				0F8541AD18362A4200B3BFDA /* InfoPlist.strings */,
+				0F8541B018362A4200B3BFDA /* main.m */,
+				0F8541B218362A4200B3BFDA /* GLVX-Prefix.pch */,
+				0F8541B318362A4200B3BFDA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F8541C818362A4300B3BFDA /* GLVXTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541CE18362A4300B3BFDA /* GLVXTests.m */,
+				0F8541C918362A4300B3BFDA /* Supporting Files */,
+			);
+			path = GLVXTests;
+			sourceTree = "<group>";
+		};
+		0F8541C918362A4300B3BFDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F8541CA18362A4300B3BFDA /* GLVXTests-Info.plist */,
+				0F8541CB18362A4300B3BFDA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F8541A018362A4200B3BFDA /* GLVX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F8541D218362A4300B3BFDA /* Build configuration list for PBXNativeTarget "GLVX" */;
+			buildPhases = (
+				0F85419D18362A4200B3BFDA /* Sources */,
+				0F85419E18362A4200B3BFDA /* Frameworks */,
+				0F85419F18362A4200B3BFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLVX;
+			productName = GLVX;
+			productReference = 0F8541A118362A4200B3BFDA /* GLVX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F8541C118362A4300B3BFDA /* GLVXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F8541D518362A4300B3BFDA /* Build configuration list for PBXNativeTarget "GLVXTests" */;
+			buildPhases = (
+				0F8541BE18362A4300B3BFDA /* Sources */,
+				0F8541BF18362A4300B3BFDA /* Frameworks */,
+				0F8541C018362A4300B3BFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F8541C718362A4300B3BFDA /* PBXTargetDependency */,
+			);
+			name = GLVXTests;
+			productName = GLVXTests;
+			productReference = 0F8541C218362A4300B3BFDA /* GLVXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F85419918362A4200B3BFDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GLVX;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Keijiro Takahashi";
+				TargetAttributes = {
+					0F8541C118362A4300B3BFDA = {
+						TestTargetID = 0F8541A018362A4200B3BFDA;
+					};
+				};
+			};
+			buildConfigurationList = 0F85419C18362A4200B3BFDA /* Build configuration list for PBXProject "GLVX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F85419818362A4200B3BFDA;
+			productRefGroup = 0F8541A218362A4200B3BFDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F8541A018362A4200B3BFDA /* GLVX */,
+				0F8541C118362A4300B3BFDA /* GLVXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F85419F18362A4200B3BFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8541AF18362A4200B3BFDA /* InfoPlist.strings in Resources */,
+				0F8541BD18362A4200B3BFDA /* Images.xcassets in Resources */,
+				0F8541B518362A4200B3BFDA /* Credits.rtf in Resources */,
+				0F8541BB18362A4200B3BFDA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F8541C018362A4300B3BFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8541CD18362A4300B3BFDA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F85419D18362A4200B3BFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8541B118362A4200B3BFDA /* main.m in Sources */,
+				0F8541B818362A4200B3BFDA /* GLVXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F8541BE18362A4300B3BFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8541CF18362A4300B3BFDA /* GLVXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F8541C718362A4300B3BFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F8541A018362A4200B3BFDA /* GLVX */;
+			targetProxy = 0F8541C618362A4300B3BFDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F8541AD18362A4200B3BFDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8541AE18362A4200B3BFDA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F8541B318362A4200B3BFDA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8541B418362A4200B3BFDA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0F8541B918362A4200B3BFDA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8541BA18362A4200B3BFDA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0F8541CB18362A4300B3BFDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8541CC18362A4300B3BFDA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F8541D018362A4300B3BFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F8541D118362A4300B3BFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F8541D318362A4300B3BFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLVX/GLVX-Prefix.pch";
+				INFOPLIST_FILE = "GLVX/GLVX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F8541D418362A4300B3BFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLVX/GLVX-Prefix.pch";
+				INFOPLIST_FILE = "GLVX/GLVX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0F8541D618362A4300B3BFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLVX.app/Contents/MacOS/GLVX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLVX/GLVX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GLVXTests/GLVXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0F8541D718362A4300B3BFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLVX.app/Contents/MacOS/GLVX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLVX/GLVX-Prefix.pch";
+				INFOPLIST_FILE = "GLVXTests/GLVXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F85419C18362A4200B3BFDA /* Build configuration list for PBXProject "GLVX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F8541D018362A4300B3BFDA /* Debug */,
+				0F8541D118362A4300B3BFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F8541D218362A4300B3BFDA /* Build configuration list for PBXNativeTarget "GLVX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F8541D318362A4300B3BFDA /* Debug */,
+				0F8541D418362A4300B3BFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0F8541D518362A4300B3BFDA /* Build configuration list for PBXNativeTarget "GLVXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F8541D618362A4300B3BFDA /* Debug */,
+				0F8541D718362A4300B3BFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F85419918362A4200B3BFDA /* Project object */;
+}
