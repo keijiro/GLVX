@@ -7,30 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F734207183725390009F041 /* GLVXWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F734205183725390009F041 /* GLVXWindowController.mm */; };
+		0F734208183725390009F041 /* GLVXWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F734206183725390009F041 /* GLVXWindow.xib */; };
+		0F73420A183729E20009F041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F734209183729E20009F041 /* main.m */; };
 		0F8541A518362A4200B3BFDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541A418362A4200B3BFDA /* Cocoa.framework */; };
 		0F8541AF18362A4200B3BFDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541AD18362A4200B3BFDA /* InfoPlist.strings */; };
-		0F8541B118362A4200B3BFDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B018362A4200B3BFDA /* main.m */; };
-		0F8541B518362A4200B3BFDA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541B318362A4200B3BFDA /* Credits.rtf */; };
-		0F8541B818362A4200B3BFDA /* GLVXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */; };
+		0F8541B818362A4200B3BFDA /* GLVXAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B718362A4200B3BFDA /* GLVXAppDelegate.mm */; };
 		0F8541BB18362A4200B3BFDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541B918362A4200B3BFDA /* MainMenu.xib */; };
 		0F8541BD18362A4200B3BFDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541BC18362A4200B3BFDA /* Images.xcassets */; };
-		0F8541C418362A4300B3BFDA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541C318362A4300B3BFDA /* XCTest.framework */; };
-		0F8541C518362A4300B3BFDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541A418362A4200B3BFDA /* Cocoa.framework */; };
-		0F8541CD18362A4300B3BFDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541CB18362A4300B3BFDA /* InfoPlist.strings */; };
-		0F8541CF18362A4300B3BFDA /* GLVXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541CE18362A4300B3BFDA /* GLVXTests.m */; };
+		0F85420C18362A9700B3BFDA /* glv_buttons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541F518362A9600B3BFDA /* glv_buttons.cpp */; };
+		0F85420D18362A9700B3BFDA /* glv_color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541F618362A9600B3BFDA /* glv_color.cpp */; };
+		0F85420E18362A9700B3BFDA /* glv_color_controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541F718362A9600B3BFDA /* glv_color_controls.cpp */; };
+		0F85420F18362A9700B3BFDA /* glv_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541F818362A9600B3BFDA /* glv_core.cpp */; };
+		0F85421018362A9700B3BFDA /* glv_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541F918362A9600B3BFDA /* glv_draw.cpp */; };
+		0F85421118362A9700B3BFDA /* glv_font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541FA18362A9600B3BFDA /* glv_font.cpp */; };
+		0F85421218362A9700B3BFDA /* glv_glv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541FB18362A9600B3BFDA /* glv_glv.cpp */; };
+		0F85421318362A9700B3BFDA /* glv_grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541FC18362A9600B3BFDA /* glv_grid.cpp */; };
+		0F85421418362A9700B3BFDA /* glv_inputdevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541FD18362A9600B3BFDA /* glv_inputdevice.cpp */; };
+		0F85421518362A9700B3BFDA /* glv_layout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541FE18362A9600B3BFDA /* glv_layout.cpp */; };
+		0F85421618362A9700B3BFDA /* glv_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541FF18362A9600B3BFDA /* glv_model.cpp */; };
+		0F85421718362A9700B3BFDA /* glv_notification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420018362A9600B3BFDA /* glv_notification.cpp */; };
+		0F85421818362A9700B3BFDA /* glv_plots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420118362A9600B3BFDA /* glv_plots.cpp */; };
+		0F85421918362A9700B3BFDA /* glv_preset_controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420218362A9600B3BFDA /* glv_preset_controls.cpp */; };
+		0F85421A18362A9700B3BFDA /* glv_sliders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420318362A9600B3BFDA /* glv_sliders.cpp */; };
+		0F85421B18362A9700B3BFDA /* glv_sono.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420418362A9600B3BFDA /* glv_sono.cpp */; };
+		0F85421C18362A9700B3BFDA /* glv_texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420518362A9600B3BFDA /* glv_texture.cpp */; };
+		0F85421D18362A9700B3BFDA /* glv_textview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420618362A9600B3BFDA /* glv_textview.cpp */; };
+		0F85421E18362A9700B3BFDA /* glv_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420718362A9600B3BFDA /* glv_view.cpp */; };
+		0F85421F18362A9700B3BFDA /* glv_view3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420818362A9600B3BFDA /* glv_view3D.cpp */; };
+		0F85422018362A9700B3BFDA /* glv_widget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F85420918362A9600B3BFDA /* glv_widget.cpp */; };
+		0F85422218362B0A00B3BFDA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F85422118362B0A00B3BFDA /* OpenGL.framework */; };
+		0F85422718362F5900B3BFDA /* GLVXView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F85422618362F5900B3BFDA /* GLVXView.mm */; };
+		0F85422A1836300200B3BFDA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8542291836300200B3BFDA /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0F8541C618362A4300B3BFDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F85419918362A4200B3BFDA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0F8541A018362A4200B3BFDA;
-			remoteInfo = GLVX;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0F734204183725390009F041 /* GLVXWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVXWindowController.h; sourceTree = "<group>"; };
+		0F734205183725390009F041 /* GLVXWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVXWindowController.mm; sourceTree = "<group>"; };
+		0F734206183725390009F041 /* GLVXWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLVXWindow.xib; sourceTree = "<group>"; };
+		0F734209183729E20009F041 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F8541A118362A4200B3BFDA /* GLVX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLVX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8541A418362A4200B3BFDA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0F8541A718362A4200B3BFDA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -38,18 +53,61 @@
 		0F8541A918362A4200B3BFDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F8541AC18362A4200B3BFDA /* GLVX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLVX-Info.plist"; sourceTree = "<group>"; };
 		0F8541AE18362A4200B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F8541B018362A4200B3BFDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F8541B218362A4200B3BFDA /* GLVX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLVX-Prefix.pch"; sourceTree = "<group>"; };
-		0F8541B418362A4200B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		0F8541B618362A4200B3BFDA /* GLVXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVXAppDelegate.h; sourceTree = "<group>"; };
-		0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLVXAppDelegate.m; sourceTree = "<group>"; };
+		0F8541B718362A4200B3BFDA /* GLVXAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVXAppDelegate.mm; sourceTree = "<group>"; };
 		0F8541BA18362A4200B3BFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0F8541BC18362A4200B3BFDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0F8541C218362A4300B3BFDA /* GLVXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLVXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8541C318362A4300B3BFDA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0F8541CA18362A4300B3BFDA /* GLVXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLVXTests-Info.plist"; sourceTree = "<group>"; };
-		0F8541CC18362A4300B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F8541CE18362A4300B3BFDA /* GLVXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLVXTests.m; sourceTree = "<group>"; };
+		0F8541D918362A6700B3BFDA /* glv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv.h; sourceTree = "<group>"; };
+		0F8541DA18362A6700B3BFDA /* glv_behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_behavior.h; sourceTree = "<group>"; };
+		0F8541DC18362A6700B3BFDA /* glv_buttons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_buttons.h; sourceTree = "<group>"; };
+		0F8541DD18362A6700B3BFDA /* glv_color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_color.h; sourceTree = "<group>"; };
+		0F8541DE18362A6700B3BFDA /* glv_color_controls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_color_controls.h; sourceTree = "<group>"; };
+		0F8541DF18362A6700B3BFDA /* glv_conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_conf.h; sourceTree = "<group>"; };
+		0F8541E018362A6700B3BFDA /* glv_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_core.h; sourceTree = "<group>"; };
+		0F8541E118362A6700B3BFDA /* glv_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_draw.h; sourceTree = "<group>"; };
+		0F8541E218362A6700B3BFDA /* glv_font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_font.h; sourceTree = "<group>"; };
+		0F8541E318362A6700B3BFDA /* glv_grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_grid.h; sourceTree = "<group>"; };
+		0F8541E418362A6700B3BFDA /* glv_icon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_icon.h; sourceTree = "<group>"; };
+		0F8541E518362A6700B3BFDA /* glv_layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_layout.h; sourceTree = "<group>"; };
+		0F8541E618362A6700B3BFDA /* glv_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_model.h; sourceTree = "<group>"; };
+		0F8541E718362A6700B3BFDA /* glv_notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_notification.h; sourceTree = "<group>"; };
+		0F8541E818362A6700B3BFDA /* glv_plots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_plots.h; sourceTree = "<group>"; };
+		0F8541E918362A6700B3BFDA /* glv_preset_controls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_preset_controls.h; sourceTree = "<group>"; };
+		0F8541EA18362A6700B3BFDA /* glv_rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_rect.h; sourceTree = "<group>"; };
+		0F8541EB18362A6700B3BFDA /* glv_sliders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_sliders.h; sourceTree = "<group>"; };
+		0F8541EC18362A6700B3BFDA /* glv_sono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_sono.h; sourceTree = "<group>"; };
+		0F8541ED18362A6700B3BFDA /* glv_texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_texture.h; sourceTree = "<group>"; };
+		0F8541EE18362A6700B3BFDA /* glv_textview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_textview.h; sourceTree = "<group>"; };
+		0F8541EF18362A6700B3BFDA /* glv_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_util.h; sourceTree = "<group>"; };
+		0F8541F018362A6700B3BFDA /* glv_view3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_view3D.h; sourceTree = "<group>"; };
+		0F8541F118362A6700B3BFDA /* glv_widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glv_widget.h; sourceTree = "<group>"; };
+		0F8541F518362A9600B3BFDA /* glv_buttons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_buttons.cpp; sourceTree = "<group>"; };
+		0F8541F618362A9600B3BFDA /* glv_color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_color.cpp; sourceTree = "<group>"; };
+		0F8541F718362A9600B3BFDA /* glv_color_controls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_color_controls.cpp; sourceTree = "<group>"; };
+		0F8541F818362A9600B3BFDA /* glv_core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_core.cpp; sourceTree = "<group>"; };
+		0F8541F918362A9600B3BFDA /* glv_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_draw.cpp; sourceTree = "<group>"; };
+		0F8541FA18362A9600B3BFDA /* glv_font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_font.cpp; sourceTree = "<group>"; };
+		0F8541FB18362A9600B3BFDA /* glv_glv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_glv.cpp; sourceTree = "<group>"; };
+		0F8541FC18362A9600B3BFDA /* glv_grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_grid.cpp; sourceTree = "<group>"; };
+		0F8541FD18362A9600B3BFDA /* glv_inputdevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_inputdevice.cpp; sourceTree = "<group>"; };
+		0F8541FE18362A9600B3BFDA /* glv_layout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_layout.cpp; sourceTree = "<group>"; };
+		0F8541FF18362A9600B3BFDA /* glv_model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_model.cpp; sourceTree = "<group>"; };
+		0F85420018362A9600B3BFDA /* glv_notification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_notification.cpp; sourceTree = "<group>"; };
+		0F85420118362A9600B3BFDA /* glv_plots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_plots.cpp; sourceTree = "<group>"; };
+		0F85420218362A9600B3BFDA /* glv_preset_controls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_preset_controls.cpp; sourceTree = "<group>"; };
+		0F85420318362A9600B3BFDA /* glv_sliders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_sliders.cpp; sourceTree = "<group>"; };
+		0F85420418362A9600B3BFDA /* glv_sono.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_sono.cpp; sourceTree = "<group>"; };
+		0F85420518362A9600B3BFDA /* glv_texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_texture.cpp; sourceTree = "<group>"; };
+		0F85420618362A9600B3BFDA /* glv_textview.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_textview.cpp; sourceTree = "<group>"; };
+		0F85420718362A9600B3BFDA /* glv_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_view.cpp; sourceTree = "<group>"; };
+		0F85420818362A9600B3BFDA /* glv_view3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_view3D.cpp; sourceTree = "<group>"; };
+		0F85420918362A9600B3BFDA /* glv_widget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glv_widget.cpp; sourceTree = "<group>"; };
+		0F85422118362B0A00B3BFDA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		0F85422518362F5900B3BFDA /* GLVXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVXView.h; sourceTree = "<group>"; };
+		0F85422618362F5900B3BFDA /* GLVXView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVXView.mm; sourceTree = "<group>"; };
+		0F8542291836300200B3BFDA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F85422A1836300200B3BFDA /* CoreVideo.framework in Frameworks */,
+				0F85422218362B0A00B3BFDA /* OpenGL.framework in Frameworks */,
 				0F8541A518362A4200B3BFDA /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F8541BF18362A4300B3BFDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F8541C518362A4300B3BFDA /* Cocoa.framework in Frameworks */,
-				0F8541C418362A4300B3BFDA /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +127,8 @@
 		0F85419818362A4200B3BFDA = {
 			isa = PBXGroup;
 			children = (
+				0F8541D818362A6700B3BFDA /* GLV */,
 				0F8541AA18362A4200B3BFDA /* GLVX */,
-				0F8541C818362A4300B3BFDA /* GLVXTests */,
 				0F8541A318362A4200B3BFDA /* Frameworks */,
 				0F8541A218362A4200B3BFDA /* Products */,
 			);
@@ -87,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				0F8541A118362A4200B3BFDA /* GLVX.app */,
-				0F8541C218362A4300B3BFDA /* GLVXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +145,8 @@
 		0F8541A318362A4200B3BFDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F8542291836300200B3BFDA /* CoreVideo.framework */,
+				0F85422118362B0A00B3BFDA /* OpenGL.framework */,
 				0F8541A418362A4200B3BFDA /* Cocoa.framework */,
 				0F8541C318362A4300B3BFDA /* XCTest.framework */,
 				0F8541A618362A4200B3BFDA /* Other Frameworks */,
@@ -116,10 +168,15 @@
 			isa = PBXGroup;
 			children = (
 				0F8541B618362A4200B3BFDA /* GLVXAppDelegate.h */,
-				0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */,
+				0F8541B718362A4200B3BFDA /* GLVXAppDelegate.mm */,
 				0F8541B918362A4200B3BFDA /* MainMenu.xib */,
 				0F8541BC18362A4200B3BFDA /* Images.xcassets */,
 				0F8541AB18362A4200B3BFDA /* Supporting Files */,
+				0F85422518362F5900B3BFDA /* GLVXView.h */,
+				0F85422618362F5900B3BFDA /* GLVXView.mm */,
+				0F734204183725390009F041 /* GLVXWindowController.h */,
+				0F734205183725390009F041 /* GLVXWindowController.mm */,
+				0F734206183725390009F041 /* GLVXWindow.xib */,
 			);
 			path = GLVX;
 			sourceTree = "<group>";
@@ -127,31 +184,72 @@
 		0F8541AB18362A4200B3BFDA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F734209183729E20009F041 /* main.m */,
 				0F8541AC18362A4200B3BFDA /* GLVX-Info.plist */,
 				0F8541AD18362A4200B3BFDA /* InfoPlist.strings */,
-				0F8541B018362A4200B3BFDA /* main.m */,
 				0F8541B218362A4200B3BFDA /* GLVX-Prefix.pch */,
-				0F8541B318362A4200B3BFDA /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0F8541C818362A4300B3BFDA /* GLVXTests */ = {
+		0F8541D818362A6700B3BFDA /* GLV */ = {
 			isa = PBXGroup;
 			children = (
-				0F8541CE18362A4300B3BFDA /* GLVXTests.m */,
-				0F8541C918362A4300B3BFDA /* Supporting Files */,
+				0F8541F218362A9600B3BFDA /* src */,
+				0F8541D918362A6700B3BFDA /* glv.h */,
+				0F8541DA18362A6700B3BFDA /* glv_behavior.h */,
+				0F8541DC18362A6700B3BFDA /* glv_buttons.h */,
+				0F8541DD18362A6700B3BFDA /* glv_color.h */,
+				0F8541DE18362A6700B3BFDA /* glv_color_controls.h */,
+				0F8541DF18362A6700B3BFDA /* glv_conf.h */,
+				0F8541E018362A6700B3BFDA /* glv_core.h */,
+				0F8541E118362A6700B3BFDA /* glv_draw.h */,
+				0F8541E218362A6700B3BFDA /* glv_font.h */,
+				0F8541E318362A6700B3BFDA /* glv_grid.h */,
+				0F8541E418362A6700B3BFDA /* glv_icon.h */,
+				0F8541E518362A6700B3BFDA /* glv_layout.h */,
+				0F8541E618362A6700B3BFDA /* glv_model.h */,
+				0F8541E718362A6700B3BFDA /* glv_notification.h */,
+				0F8541E818362A6700B3BFDA /* glv_plots.h */,
+				0F8541E918362A6700B3BFDA /* glv_preset_controls.h */,
+				0F8541EA18362A6700B3BFDA /* glv_rect.h */,
+				0F8541EB18362A6700B3BFDA /* glv_sliders.h */,
+				0F8541EC18362A6700B3BFDA /* glv_sono.h */,
+				0F8541ED18362A6700B3BFDA /* glv_texture.h */,
+				0F8541EE18362A6700B3BFDA /* glv_textview.h */,
+				0F8541EF18362A6700B3BFDA /* glv_util.h */,
+				0F8541F018362A6700B3BFDA /* glv_view3D.h */,
+				0F8541F118362A6700B3BFDA /* glv_widget.h */,
 			);
-			path = GLVXTests;
+			path = GLV;
 			sourceTree = "<group>";
 		};
-		0F8541C918362A4300B3BFDA /* Supporting Files */ = {
+		0F8541F218362A9600B3BFDA /* src */ = {
 			isa = PBXGroup;
 			children = (
-				0F8541CA18362A4300B3BFDA /* GLVXTests-Info.plist */,
-				0F8541CB18362A4300B3BFDA /* InfoPlist.strings */,
+				0F8541F518362A9600B3BFDA /* glv_buttons.cpp */,
+				0F8541F618362A9600B3BFDA /* glv_color.cpp */,
+				0F8541F718362A9600B3BFDA /* glv_color_controls.cpp */,
+				0F8541F818362A9600B3BFDA /* glv_core.cpp */,
+				0F8541F918362A9600B3BFDA /* glv_draw.cpp */,
+				0F8541FA18362A9600B3BFDA /* glv_font.cpp */,
+				0F8541FB18362A9600B3BFDA /* glv_glv.cpp */,
+				0F8541FC18362A9600B3BFDA /* glv_grid.cpp */,
+				0F8541FD18362A9600B3BFDA /* glv_inputdevice.cpp */,
+				0F8541FE18362A9600B3BFDA /* glv_layout.cpp */,
+				0F8541FF18362A9600B3BFDA /* glv_model.cpp */,
+				0F85420018362A9600B3BFDA /* glv_notification.cpp */,
+				0F85420118362A9600B3BFDA /* glv_plots.cpp */,
+				0F85420218362A9600B3BFDA /* glv_preset_controls.cpp */,
+				0F85420318362A9600B3BFDA /* glv_sliders.cpp */,
+				0F85420418362A9600B3BFDA /* glv_sono.cpp */,
+				0F85420518362A9600B3BFDA /* glv_texture.cpp */,
+				0F85420618362A9600B3BFDA /* glv_textview.cpp */,
+				0F85420718362A9600B3BFDA /* glv_view.cpp */,
+				0F85420818362A9600B3BFDA /* glv_view3D.cpp */,
+				0F85420918362A9600B3BFDA /* glv_widget.cpp */,
 			);
-			name = "Supporting Files";
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +272,6 @@
 			productReference = 0F8541A118362A4200B3BFDA /* GLVX.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0F8541C118362A4300B3BFDA /* GLVXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0F8541D518362A4300B3BFDA /* Build configuration list for PBXNativeTarget "GLVXTests" */;
-			buildPhases = (
-				0F8541BE18362A4300B3BFDA /* Sources */,
-				0F8541BF18362A4300B3BFDA /* Frameworks */,
-				0F8541C018362A4300B3BFDA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F8541C718362A4300B3BFDA /* PBXTargetDependency */,
-			);
-			name = GLVXTests;
-			productName = GLVXTests;
-			productReference = 0F8541C218362A4300B3BFDA /* GLVXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +281,6 @@
 				CLASSPREFIX = GLVX;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Keijiro Takahashi";
-				TargetAttributes = {
-					0F8541C118362A4300B3BFDA = {
-						TestTargetID = 0F8541A018362A4200B3BFDA;
-					};
-				};
 			};
 			buildConfigurationList = 0F85419C18362A4200B3BFDA /* Build configuration list for PBXProject "GLVX" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +296,6 @@
 			projectRoot = "";
 			targets = (
 				0F8541A018362A4200B3BFDA /* GLVX */,
-				0F8541C118362A4300B3BFDA /* GLVXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,16 +307,8 @@
 			files = (
 				0F8541AF18362A4200B3BFDA /* InfoPlist.strings in Resources */,
 				0F8541BD18362A4200B3BFDA /* Images.xcassets in Resources */,
-				0F8541B518362A4200B3BFDA /* Credits.rtf in Resources */,
+				0F734208183725390009F041 /* GLVXWindow.xib in Resources */,
 				0F8541BB18362A4200B3BFDA /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F8541C018362A4300B3BFDA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F8541CD18362A4300B3BFDA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,28 +319,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F8541B118362A4200B3BFDA /* main.m in Sources */,
-				0F8541B818362A4200B3BFDA /* GLVXAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F8541BE18362A4300B3BFDA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F8541CF18362A4300B3BFDA /* GLVXTests.m in Sources */,
+				0F85421218362A9700B3BFDA /* glv_glv.cpp in Sources */,
+				0F85421F18362A9700B3BFDA /* glv_view3D.cpp in Sources */,
+				0F85421D18362A9700B3BFDA /* glv_textview.cpp in Sources */,
+				0F85421E18362A9700B3BFDA /* glv_view.cpp in Sources */,
+				0F85421418362A9700B3BFDA /* glv_inputdevice.cpp in Sources */,
+				0F85422018362A9700B3BFDA /* glv_widget.cpp in Sources */,
+				0F85421918362A9700B3BFDA /* glv_preset_controls.cpp in Sources */,
+				0F85421A18362A9700B3BFDA /* glv_sliders.cpp in Sources */,
+				0F85422718362F5900B3BFDA /* GLVXView.mm in Sources */,
+				0F85421718362A9700B3BFDA /* glv_notification.cpp in Sources */,
+				0F85421C18362A9700B3BFDA /* glv_texture.cpp in Sources */,
+				0F85421318362A9700B3BFDA /* glv_grid.cpp in Sources */,
+				0F85421B18362A9700B3BFDA /* glv_sono.cpp in Sources */,
+				0F85420E18362A9700B3BFDA /* glv_color_controls.cpp in Sources */,
+				0F73420A183729E20009F041 /* main.m in Sources */,
+				0F85421618362A9700B3BFDA /* glv_model.cpp in Sources */,
+				0F8541B818362A4200B3BFDA /* GLVXAppDelegate.mm in Sources */,
+				0F85421518362A9700B3BFDA /* glv_layout.cpp in Sources */,
+				0F85421018362A9700B3BFDA /* glv_draw.cpp in Sources */,
+				0F734207183725390009F041 /* GLVXWindowController.mm in Sources */,
+				0F85420D18362A9700B3BFDA /* glv_color.cpp in Sources */,
+				0F85421118362A9700B3BFDA /* glv_font.cpp in Sources */,
+				0F85421818362A9700B3BFDA /* glv_plots.cpp in Sources */,
+				0F85420C18362A9700B3BFDA /* glv_buttons.cpp in Sources */,
+				0F85420F18362A9700B3BFDA /* glv_core.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0F8541C718362A4300B3BFDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0F8541A018362A4200B3BFDA /* GLVX */;
-			targetProxy = 0F8541C618362A4300B3BFDA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0F8541AD18362A4200B3BFDA /* InfoPlist.strings */ = {
@@ -285,28 +358,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		0F8541B318362A4200B3BFDA /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F8541B418362A4200B3BFDA /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		0F8541B918362A4200B3BFDA /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0F8541BA18362A4200B3BFDA /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		0F8541CB18362A4300B3BFDA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F8541CC18362A4300B3BFDA /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,46 +463,6 @@
 			};
 			name = Release;
 		};
-		0F8541D618362A4300B3BFDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLVX.app/Contents/MacOS/GLVX";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLVX/GLVX-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GLVXTests/GLVXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		0F8541D718362A4300B3BFDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLVX.app/Contents/MacOS/GLVX";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLVX/GLVX-Prefix.pch";
-				INFOPLIST_FILE = "GLVXTests/GLVXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,14 +482,7 @@
 				0F8541D418362A4300B3BFDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		0F8541D518362A4300B3BFDA /* Build configuration list for PBXNativeTarget "GLVXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F8541D618362A4300B3BFDA /* Debug */,
-				0F8541D718362A4300B3BFDA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

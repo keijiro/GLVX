@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface GLVXAppDelegate : NSObject <NSApplicationDelegate>
+@class GLVXWindowController;
 
-@property (assign) IBOutlet NSWindow *window;
+@interface GLVXAppDelegate : NSObject <NSApplicationDelegate>
+{
+    GLVXWindowController *_controller;
+}
+
 
 @end
