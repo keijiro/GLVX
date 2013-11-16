@@ -4,7 +4,8 @@
 
 @interface GLVXAppDelegate : NSObject <NSApplicationDelegate>
 {
-    GLVXWindowController *_controller;
+    GLVXWindowController *_widgets;
+    GLVXWindowController *_text;
 }
 
 @end

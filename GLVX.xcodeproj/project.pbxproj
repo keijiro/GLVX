@@ -10,9 +10,11 @@
 		0F734207183725390009F041 /* GLVXWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F734205183725390009F041 /* GLVXWindowController.mm */; };
 		0F734208183725390009F041 /* GLVXWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F734206183725390009F041 /* GLVXWindow.xib */; };
 		0F73420A183729E20009F041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F734209183729E20009F041 /* main.m */; };
+		0F73420F18375D8A0009F041 /* Widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F73420D18375D8A0009F041 /* Widgets.cpp */; };
+		0F73421218375FE40009F041 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F73421018375FE40009F041 /* Text.cpp */; };
 		0F8541A518362A4200B3BFDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8541A418362A4200B3BFDA /* Cocoa.framework */; };
 		0F8541AF18362A4200B3BFDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541AD18362A4200B3BFDA /* InfoPlist.strings */; };
-		0F8541B818362A4200B3BFDA /* GLVXAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B718362A4200B3BFDA /* GLVXAppDelegate.mm */; };
+		0F8541B818362A4200B3BFDA /* GLVXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */; };
 		0F8541BB18362A4200B3BFDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541B918362A4200B3BFDA /* MainMenu.xib */; };
 		0F8541BD18362A4200B3BFDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8541BC18362A4200B3BFDA /* Images.xcassets */; };
 		0F85420C18362A9700B3BFDA /* glv_buttons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8541F518362A9600B3BFDA /* glv_buttons.cpp */; };
@@ -47,6 +49,9 @@
 		0F734206183725390009F041 /* GLVXWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLVXWindow.xib; sourceTree = "<group>"; };
 		0F734209183729E20009F041 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F73420B18374DD70009F041 /* GLVX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVX.h; sourceTree = "<group>"; };
+		0F73420D18375D8A0009F041 /* Widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Widgets.cpp; path = GLVX/Examples/Widgets.cpp; sourceTree = "<group>"; };
+		0F73420E18375D8A0009F041 /* TestViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViews.h; path = GLVX/Examples/TestViews.h; sourceTree = "<group>"; };
+		0F73421018375FE40009F041 /* Text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Text.cpp; path = GLVX/Examples/Text.cpp; sourceTree = "<group>"; };
 		0F8541A118362A4200B3BFDA /* GLVX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLVX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8541A418362A4200B3BFDA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0F8541A718362A4200B3BFDA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -56,7 +61,7 @@
 		0F8541AE18362A4200B3BFDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F8541B218362A4200B3BFDA /* GLVX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLVX-Prefix.pch"; sourceTree = "<group>"; };
 		0F8541B618362A4200B3BFDA /* GLVXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVXAppDelegate.h; sourceTree = "<group>"; };
-		0F8541B718362A4200B3BFDA /* GLVXAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVXAppDelegate.mm; sourceTree = "<group>"; };
+		0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLVXAppDelegate.m; sourceTree = "<group>"; };
 		0F8541BA18362A4200B3BFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0F8541BC18362A4200B3BFDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F8541C318362A4300B3BFDA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,9 +130,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F73420C18375D4F0009F041 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				0F73420E18375D8A0009F041 /* TestViews.h */,
+				0F73421018375FE40009F041 /* Text.cpp */,
+				0F73420D18375D8A0009F041 /* Widgets.cpp */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
 		0F85419818362A4200B3BFDA = {
 			isa = PBXGroup;
 			children = (
+				0F73420C18375D4F0009F041 /* Examples */,
 				0F8541D818362A6700B3BFDA /* GLV */,
 				0F8541AA18362A4200B3BFDA /* GLVX */,
 				0F8541A318362A4200B3BFDA /* Frameworks */,
@@ -169,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				0F8541B618362A4200B3BFDA /* GLVXAppDelegate.h */,
-				0F8541B718362A4200B3BFDA /* GLVXAppDelegate.mm */,
+				0F8541B718362A4200B3BFDA /* GLVXAppDelegate.m */,
 				0F8541B918362A4200B3BFDA /* MainMenu.xib */,
 				0F8541BC18362A4200B3BFDA /* Images.xcassets */,
 				0F8541AB18362A4200B3BFDA /* Supporting Files */,
@@ -321,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F73421218375FE40009F041 /* Text.cpp in Sources */,
 				0F85421218362A9700B3BFDA /* glv_glv.cpp in Sources */,
 				0F85421F18362A9700B3BFDA /* glv_view3D.cpp in Sources */,
 				0F85421D18362A9700B3BFDA /* glv_textview.cpp in Sources */,
@@ -337,9 +354,10 @@
 				0F85420E18362A9700B3BFDA /* glv_color_controls.cpp in Sources */,
 				0F73420A183729E20009F041 /* main.m in Sources */,
 				0F85421618362A9700B3BFDA /* glv_model.cpp in Sources */,
-				0F8541B818362A4200B3BFDA /* GLVXAppDelegate.mm in Sources */,
+				0F8541B818362A4200B3BFDA /* GLVXAppDelegate.m in Sources */,
 				0F85421518362A9700B3BFDA /* glv_layout.cpp in Sources */,
 				0F85421018362A9700B3BFDA /* glv_draw.cpp in Sources */,
+				0F73420F18375D8A0009F041 /* Widgets.cpp in Sources */,
 				0F734207183725390009F041 /* GLVXWindowController.mm in Sources */,
 				0F85420D18362A9700B3BFDA /* glv_color.cpp in Sources */,
 				0F85421118362A9700B3BFDA /* glv_font.cpp in Sources */,

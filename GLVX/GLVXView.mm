@@ -80,11 +80,11 @@ static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
     CGLLockContext((CGLContextObj)self.openGLContext.CGLContextObj);
     
     [self.openGLContext makeCurrentContext];
-
-    glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+    
     if (_glv)
     {
-        glv::Dereference(_glv).drawGLV(self.frame.size.width, self.frame.size.height, 1.0 / 60);
+        CGSize size = self.frame.size;
+        glv::Dereference(_glv).drawGLV(size.width, size.height, 1.0 / 60);
     }
 
     CGLFlushDrawable((CGLContextObj)self.openGLContext.CGLContextObj);
