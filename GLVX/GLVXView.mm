@@ -1,4 +1,5 @@
 #import "GLVXView.h"
+#import "glv.h"
 
 @implementation GLVXView
 
@@ -83,7 +84,7 @@ static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
     if (_glv)
     {
-        _glv->drawGLV(self.frame.size.width, self.frame.size.height, 1.0 / 60);
+        glv::Dereference(_glv).drawGLV(self.frame.size.width, self.frame.size.height, 1.0 / 60);
     }
 
     CGLFlushDrawable((CGLContextObj)self.openGLContext.CGLContextObj);

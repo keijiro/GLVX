@@ -46,6 +46,7 @@
 		0F734205183725390009F041 /* GLVXWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVXWindowController.mm; sourceTree = "<group>"; };
 		0F734206183725390009F041 /* GLVXWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLVXWindow.xib; sourceTree = "<group>"; };
 		0F734209183729E20009F041 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F73420B18374DD70009F041 /* GLVX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVX.h; sourceTree = "<group>"; };
 		0F8541A118362A4200B3BFDA /* GLVX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLVX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8541A418362A4200B3BFDA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0F8541A718362A4200B3BFDA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -177,6 +178,7 @@
 				0F734204183725390009F041 /* GLVXWindowController.h */,
 				0F734205183725390009F041 /* GLVXWindowController.mm */,
 				0F734206183725390009F041 /* GLVXWindow.xib */,
+				0F73420B18374DD70009F041 /* GLVX.h */,
 			);
 			path = GLVX;
 			sourceTree = "<group>";

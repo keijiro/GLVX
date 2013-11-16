@@ -1,13 +1,14 @@
 #import <Cocoa/Cocoa.h>
-#import "GLVXView.h"
-#import "glv.h"
+#import "GLVX.h"
+
+@class GLVXView;
 
 @interface GLVXWindowController : NSWindowController
 {
-    glv::GLV *_glv;
+    GLVREF _glv;
     IBOutlet GLVXView *_glvxView;
 }
 
-- (id)initWithGLV:(glv::GLV *)glv;
+- (id)initWithGLV:(GLVREF)glv;
 
 @end

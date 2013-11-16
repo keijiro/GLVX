@@ -1,11 +1,11 @@
 #import <Cocoa/Cocoa.h>
-#import "glv.h"
+#import "GLVX.h"
 
 @interface GLVXView : NSOpenGLView
 {
     CVDisplayLinkRef _displayLink;
 }
 
-@property (assign) glv::GLV *glv;
+@property (assign) GLVREF glv;
 
 @end
