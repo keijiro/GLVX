@@ -1,13 +1,14 @@
 #import "GLVXView.h"
 #import "glv.h"
 
-@implementation GLVXView
+#pragma mark Private members
 
-- (CVReturn) getFrameForTime:(const CVTimeStamp*)outputTime
-{
-	[self drawView];
-	return kCVReturnSuccess;
-}
+@interface GLVXView ()
+- (void)drawView;
+@end
+
+#pragma mark
+#pragma mark DisplayLink Callbacks
 
 static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
                                           const CVTimeStamp *now,
@@ -16,22 +17,37 @@ static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
                                           CVOptionFlags *flagsOut,
                                           void *displayLinkContext)
 {
-    GLVXView *glView = (__bridge GLVXView *)displayLinkContext;
-    CVReturn result = [glView getFrameForTime:outputTime];
-    return result;
+    GLVXView *view = (__bridge GLVXView *)displayLinkContext;
+    [view drawView];
+	return kCVReturnSuccess;
 }
 
-- (void)awakeFromNib
+#pragma mark
+#pragma mark Class implementation
+
+@implementation GLVXView
+
+#pragma mark Constructor and destructor
+
+- (id)initWithGLV:(GLVREF)glv frame:(NSRect)frameRect
 {
-    NSOpenGLPixelFormatAttribute attributes[] = {
-        NSOpenGLPFADoubleBuffer,
-        NSOpenGLPFAPixelBuffer,
-        NSOpenGLPFAColorSize, 32,
-        NSOpenGLPFADepthSize, 24,
-        0
-    };
-    self.pixelFormat = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
-    self.openGLContext = [[NSOpenGLContext alloc] initWithFormat:self.pixelFormat shareContext:nil];
+    self = [super initWithFrame:frameRect];
+    if (self)
+    {
+        _glv = glv;
+        
+        NSOpenGLPixelFormatAttribute attributes[] = {
+            NSOpenGLPFADoubleBuffer,
+            NSOpenGLPFAPixelBuffer,
+            NSOpenGLPFAColorSize, 32,
+            NSOpenGLPFADepthSize, 24,
+            0
+        };
+        
+        self.pixelFormat = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
+        self.openGLContext = [[NSOpenGLContext alloc] initWithFormat:self.pixelFormat shareContext:nil];
+    }
+    return self;
 }
 
 - (void)dealloc
@@ -40,34 +56,41 @@ static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
     CVDisplayLinkRelease(_displayLink);
 }
 
+#pragma mark NSOpenGLView methods
+
 - (void)prepareOpenGL
 {
     [super prepareOpenGL];
     
-    [self initGL];
+//    [self.openGLContext makeCurrentContext];
+
+    // Maximize framerate.
+    GLint interval = 1;
+    [self.openGLContext setValues:&interval forParameter:NSOpenGLCPSwapInterval];
     
+    // Initialize DisplayLink.
     CVDisplayLinkCreateWithActiveCGDisplays(&_displayLink);
     CVDisplayLinkSetOutputCallback(_displayLink, DisplayLinkOutputCallback, (__bridge void *)(self));
-    CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext(_displayLink, (CGLContextObj)(self.openGLContext.CGLContextObj), (CGLPixelFormatObj)(self.pixelFormat.CGLPixelFormatObj));
+
+    CGLContextObj cglCtx = (CGLContextObj)(self.openGLContext.CGLContextObj);
+    CGLPixelFormatObj cglPF = (CGLPixelFormatObj)(self.pixelFormat.CGLPixelFormatObj);
+    CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext(_displayLink, cglCtx, cglPF);
+    
     CVDisplayLinkStart(_displayLink);
     
+    // Add an observer for closing the window.
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(windowWillClose:)
                                                  name:NSWindowWillCloseNotification
                                                object:self.window];
 }
 
+#pragma mark NSWindow methods
+
 - (void)windowWillClose:(NSNotification *)notification
 {
+    // DisplayLink need to be stopped manually.
     CVDisplayLinkStop(_displayLink);
-}
-
-- (void)initGL
-{
-    [self.openGLContext makeCurrentContext];
-    
-    GLint interval = 1;
-    [self.openGLContext setValues:&interval forParameter:NSOpenGLCPSwapInterval];
 }
 
 - (void)drawRect:(NSRect)dirtyRect
@@ -75,20 +98,23 @@ static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
     [self drawView];
 }
 
+#pragma mark Private methods
+
 - (void)drawView
 {
-    CGLLockContext((CGLContextObj)self.openGLContext.CGLContextObj);
-    
-    [self.openGLContext makeCurrentContext];
-    
-    if (_glv)
-    {
-        CGSize size = self.frame.size;
-        glv::Dereference(_glv).drawGLV(size.width, size.height, 1.0 / 60);
-    }
+    CGLContextObj cglCtx = (CGLContextObj)(self.openGLContext.CGLContextObj);
 
-    CGLFlushDrawable((CGLContextObj)self.openGLContext.CGLContextObj);
-    CGLUnlockContext((CGLContextObj)self.openGLContext.CGLContextObj);
+    // Lock DisplayLink.
+    CGLLockContext(cglCtx);
+    
+    // Draw with GLV.
+    CGSize size = self.frame.size;
+    [self.openGLContext makeCurrentContext];
+    glv::Dereference(_glv).drawGLV(size.width, size.height, 1.0 / 60);
+
+    // Flush and unlock DisplayLink.
+    CGLFlushDrawable(cglCtx);
+    CGLUnlockContext(cglCtx);
 }
 
 @end

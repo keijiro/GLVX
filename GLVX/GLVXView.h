@@ -3,9 +3,10 @@
 
 @interface GLVXView : NSOpenGLView
 {
+    GLVREF _glv;
     CVDisplayLinkRef _displayLink;
 }
 
-@property (assign) GLVREF glv;
+- (id)initWithGLV:(GLVREF)glv frame:(NSRect)frameRect;
 
 @end

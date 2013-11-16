@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F734207183725390009F041 /* GLVXWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F734205183725390009F041 /* GLVXWindowController.mm */; };
-		0F734208183725390009F041 /* GLVXWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F734206183725390009F041 /* GLVXWindow.xib */; };
 		0F73420A183729E20009F041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F734209183729E20009F041 /* main.m */; };
 		0F73420F18375D8A0009F041 /* Widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F73420D18375D8A0009F041 /* Widgets.cpp */; };
 		0F73421218375FE40009F041 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F73421018375FE40009F041 /* Text.cpp */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		0F734204183725390009F041 /* GLVXWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVXWindowController.h; sourceTree = "<group>"; };
 		0F734205183725390009F041 /* GLVXWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVXWindowController.mm; sourceTree = "<group>"; };
-		0F734206183725390009F041 /* GLVXWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLVXWindow.xib; sourceTree = "<group>"; };
 		0F734209183729E20009F041 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F73420B18374DD70009F041 /* GLVX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVX.h; sourceTree = "<group>"; };
 		0F73420D18375D8A0009F041 /* Widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Widgets.cpp; path = GLVX/Examples/Widgets.cpp; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 				0F85422618362F5900B3BFDA /* GLVXView.mm */,
 				0F734204183725390009F041 /* GLVXWindowController.h */,
 				0F734205183725390009F041 /* GLVXWindowController.mm */,
-				0F734206183725390009F041 /* GLVXWindow.xib */,
 				0F73420B18374DD70009F041 /* GLVX.h */,
 			);
 			path = GLVX;
@@ -325,7 +322,6 @@
 			files = (
 				0F8541AF18362A4200B3BFDA /* InfoPlist.strings in Resources */,
 				0F8541BD18362A4200B3BFDA /* Images.xcassets in Resources */,
-				0F734208183725390009F041 /* GLVXWindow.xib in Resources */,
 				0F8541BB18362A4200B3BFDA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

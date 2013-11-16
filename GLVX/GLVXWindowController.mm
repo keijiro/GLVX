@@ -15,40 +15,46 @@
 
 #pragma mark Initialization
 
-- (id)initWithGLV:(GLVREF)glv
+- (id)initWithGLV:(GLVREF)glv size:(CGSize)size title:(NSString *)title
 {
-    self = [super initWithWindowNibName:@"GLVXWindow"];
-    if (self)
-    {
-        _glv = glv;
-    }
+    CGSize screenSize = [NSScreen mainScreen].frame.size;
+    
+    // Place the content at the center of the screen.
+    NSRect contentRect;
+    contentRect.origin.x = (screenSize.width - size.width) / 2;
+    contentRect.origin.y = (screenSize.height - size.height) / 2;
+    contentRect.size = size;
+    
+    // Create an empty window.
+    NSUInteger styleMask = NSTitledWindowMask | NSClosableWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask;
+    NSWindow *window = [[NSWindow alloc] initWithContentRect:contentRect styleMask:styleMask backing:NSBackingStoreBuffered defer:YES];
+    if (!window) return self;
+    
+    // Create itself.
+    self = [super initWithWindow:window];
+    if (!self) return self;
+    
+    // Create a GLVXView instance and initialize the window.
+    window.contentView = [[GLVXView alloc] initWithGLV:glv frame:contentRect];
+    window.delegate = self;
+    window.title = title;
+    
+    // Initialize the GLV instance.
+    _glv = glv;
+    glv::Dereference(_glv).extent(size.width, size.height);
+    glv::Dereference(_glv).broadcastEvent(glv::Event::WindowCreate);
+    
     return self;
-}
-
-- (void)windowDidLoad
-{
-    [super windowDidLoad];
-    
-    _glvxView.glv = _glv;
-    
-    glv::GLV& glv = glv::Dereference(_glv);
-    
-    CGSize size = _glvxView.frame.size;
-    glv.extent(size.width, size.height);
-    
-    glv.broadcastEvent(glv::Event::WindowCreate);
 }
 
 #pragma mark Window handling events
 
 - (void)windowDidResize:(NSNotification *)notification
 {
-    glv::GLV& glv = glv::Dereference(_glv);
-    
-    CGSize size = _glvxView.frame.size;
-    glv.extent(size.width, size.height);
-    
-    glv.broadcastEvent(glv::Event::WindowResize);
+    glv::GLV& target = glv::Dereference(_glv);
+    CGSize size = [self.window.contentView frame].size;
+    target.extent(size.width, size.height);
+    target.broadcastEvent(glv::Event::WindowResize);
 }
 
 #pragma mark Mouse events
@@ -72,8 +78,11 @@
 {
     glv::GLV& target = glv::Dereference(_glv);
     
+    // Flip vertically.
     NSPoint point = theEvent.locationInWindow;
-    point.y = _glvxView.frame.size.height - point.y;
+    CGSize size = [self.window.contentView frame].size;
+    point.y = size.height - point.y;
+    
     glv::space_t relx = point.x;
     glv::space_t rely = point.y;
     
