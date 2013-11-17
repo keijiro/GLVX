@@ -62,8 +62,6 @@ static CVReturn DisplayLinkOutputCallback(CVDisplayLinkRef displayLink,
 {
     [super prepareOpenGL];
     
-//    [self.openGLContext makeCurrentContext];
-
     // Maximize framerate.
     GLint interval = 1;
     [self.openGLContext setValues:&interval forParameter:NSOpenGLCPSwapInterval];
