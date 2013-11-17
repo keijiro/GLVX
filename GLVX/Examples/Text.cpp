@@ -8,6 +8,8 @@ namespace
     
     struct MyGLV : public GLV
     {
+        MyGLV() : GLV(600, 300) {}
+        
         void onDraw(GLV& g)
         {
             using namespace glv::draw;

@@ -6,11 +6,14 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    _widgets = [[GLVXWindowController alloc] initWithGLV:GetWidgetsTestView() size:CGSizeMake(800, 600) title:@"GLV Widgets"];
+    _widgets = [[GLVXWindowController alloc] initWithGLV:GetWidgetsTestView() title:@"GLV Widgets"];
     [_widgets showWindow:nil];
 
-    _text = [[GLVXWindowController alloc] initWithGLV:GetTextTestView() size:CGSizeMake(600, 300) title:@"Example: draw::text"];
+    _text = [[GLVXWindowController alloc] initWithGLV:GetTextTestView() title:@"Example: draw::text"];
     [_text showWindow:nil];
+    
+    _misc = [[GLVXWindowController alloc] initWithGLV:GetMiscTestView() title:@"GLV Test"];
+    [_misc showWindow:nil];
 }
 
 @end

@@ -6,6 +6,7 @@
 {
     GLVXWindowController *_widgets;
     GLVXWindowController *_text;
+    GLVXWindowController *_misc;
 }
 
 @end

@@ -46,6 +46,7 @@ namespace
         Button toolBar[8];
         
         MyGLV()
+        : GLV(800, 600)
         {
             colors().set(HSV(0.3,0.,0.6), 0.55);
             

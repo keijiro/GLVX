@@ -6,6 +6,6 @@
     GLVREF _glv;
 }
 
-- (id)initWithGLV:(GLVREF)glv size:(CGSize)size title:(NSString *)title;
+- (id)initWithGLV:(GLVREF)glv title:(NSString *)title;
 
 @end

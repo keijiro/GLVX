@@ -9,6 +9,7 @@ extern "C" {
 
 extern GLVREF GetWidgetsTestView();
 extern GLVREF GetTextTestView();
+extern GLVREF GetMiscTestView();
 
 #ifdef __cplusplus
 }

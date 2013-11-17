@@ -5,6 +5,8 @@
 #pragma mark Private members
 
 @interface GLVXWindowController ()
+- (void)applyModifierKey:(NSEvent *)theEvent;
+- (void)processKeyEvent:(NSEvent *)theEvent;
 - (void)processMouseEvent:(NSEvent *)theEvent;
 @end
 
@@ -15,15 +17,20 @@
 
 #pragma mark Initialization
 
-- (id)initWithGLV:(GLVREF)glv size:(CGSize)size title:(NSString *)title
+- (id)initWithGLV:(GLVREF)glv title:(NSString *)title
 {
+    glv::GLV& top = glv::Dereference(glv);
+    int width = top.width();
+    int height = top.height();
+    
+    // Main screen size.
     CGSize screenSize = [NSScreen mainScreen].frame.size;
     
     // Place the content at the center of the screen.
     NSRect contentRect;
-    contentRect.origin.x = (screenSize.width - size.width) / 2;
-    contentRect.origin.y = (screenSize.height - size.height) / 2;
-    contentRect.size = size;
+    contentRect.origin.x = (screenSize.width - width) / 2;
+    contentRect.origin.y = (screenSize.height - height) / 2;
+    contentRect.size = CGSizeMake(width, height);
     
     // Create an empty window.
     NSUInteger styleMask = NSTitledWindowMask | NSClosableWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask;
@@ -41,8 +48,8 @@
     
     // Initialize the GLV instance.
     _glv = glv;
-    glv::Dereference(_glv).extent(size.width, size.height);
-    glv::Dereference(_glv).broadcastEvent(glv::Event::WindowCreate);
+    top.extent(width, height);
+    top.broadcastEvent(glv::Event::WindowCreate);
     
     return self;
 }
@@ -55,6 +62,48 @@
     CGSize size = [self.window.contentView frame].size;
     target.extent(size.width, size.height);
     target.broadcastEvent(glv::Event::WindowResize);
+}
+
+#pragma mark Key events
+
+- (void)applyModifierKey:(NSEvent *)theEvent
+{
+    glv::GLV& target = glv::Dereference(_glv);
+    NSUInteger mod = theEvent.modifierFlags;
+    target.setKeyModifiers(mod & NSShiftKeyMask,
+                           mod & NSAlternateKeyMask,
+                           mod & NSControlKeyMask,
+                           mod & NSAlphaShiftKeyMask,
+                           mod & NSCommandKeyMask);
+}
+
+- (void)processKeyEvent:(NSEvent *)theEvent
+{
+    glv::GLV& target = glv::Dereference(_glv);
+
+    [self applyModifierKey:theEvent];
+    
+    unsigned int key = [theEvent.charactersIgnoringModifiers characterAtIndex:0];
+    if (theEvent.type == NSKeyDown)
+    {
+        target.setKeyDown(key);
+    }
+    else if (theEvent.type == NSKeyUp)
+    {
+        target.setKeyUp(key);
+    }
+    
+    target.propagateEvent();
+}
+
+- (void)keyDown:(NSEvent *)theEvent
+{
+    [self processKeyEvent:theEvent];
+}
+
+- (void)keyUp:(NSEvent *)theEvent
+{
+    [self processKeyEvent:theEvent];
 }
 
 #pragma mark Mouse events
@@ -77,6 +126,8 @@
 - (void)processMouseEvent:(NSEvent *)theEvent
 {
     glv::GLV& target = glv::Dereference(_glv);
+    
+    [self applyModifierKey:theEvent];
     
     // Flip vertically.
     NSPoint point = theEvent.locationInWindow;
